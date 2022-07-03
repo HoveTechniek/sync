@@ -1,0 +1,16 @@
+table.table
+  thead
+    th Attribute
+    th Dashboard
+    th Outsmart
+    th Nieuw
+  tbody
+    - Sync::OutsmartProject.attributes.each do |attribute, owa_attribute|
+      tr
+        td = attribute
+        td = @project[attribute]
+        td = @outsmart_project[owa_attribute]
+        
+code = @outsmart_project
+
+p = link_to "Nieuw", new_outsmart_project_path(id: @project.id), data: {turbo_frame: "remote_modal"}

@@ -1,0 +1,103 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  external_id: MyString
+  WorkorderNo: MyString
+  OrderNr: MyString
+  WorkDate: 2022-06-29
+  WorkTime: 2022-06-29 19:26:44
+  WorkEndDate: 2022-06-29
+  WorkEndTime: 2022-06-29 19:26:44
+  ProjectNr: MyString
+  ExternProjectNr: MyString
+  CustomerName: MyString
+  CustomerDebtorNr: MyString
+  CustomerStreet: MyString
+  CustomerEmail: MyString
+  CustomerZIP: MyString
+  CustomerCity: MyString
+  CustomerContactPerson: MyString
+  CustomerPhone: MyString
+  CustomerRemark: MyString
+  CustomerNameInvoice: MyString
+  CustomerDebtorNrInvoice: MyString
+  CustomerStreetInvoice: MyString
+  CustomerStreetNoInvoice: MyString
+  CustomerEmailInvoice: MyString
+  CustomerZIPInvoice: MyString
+  CustomerCityInvoice: MyString
+  CustomerContactPersonInvoice: MyString
+  CustomerPhoneInvoice: MyString
+  CustomerRemarkInvoice: MyString
+  TypeOfWork: MyString
+  WorkDescription: MyString
+  WorkInstruction: MyString
+  PaymentMethod: MyString
+  CreationDate: MyString
+  EmployeeNr: MyString
+  Signature: MyString
+  SignatureUrl: MyString
+  PdfUrl: MyString
+  WordUrl: MyString
+  WorksheetCode: MyString
+  Status: MyString
+  WorkFinished: MyString
+  Archived: MyString
+  Photos: MyString
+  Workperiods: MyString
+  Materials: MyString
+  Documents: MyString
+  Forms: MyString
+  Employees: MyString
+  WorkObjects: MyString
+
+two:
+  external_id: MyString
+  WorkorderNo: MyString
+  OrderNr: MyString
+  WorkDate: 2022-06-29
+  WorkTime: 2022-06-29 19:26:44
+  WorkEndDate: 2022-06-29
+  WorkEndTime: 2022-06-29 19:26:44
+  ProjectNr: MyString
+  ExternProjectNr: MyString
+  CustomerName: MyString
+  CustomerDebtorNr: MyString
+  CustomerStreet: MyString
+  CustomerEmail: MyString
+  CustomerZIP: MyString
+  CustomerCity: MyString
+  CustomerContactPerson: MyString
+  CustomerPhone: MyString
+  CustomerRemark: MyString
+  CustomerNameInvoice: MyString
+  CustomerDebtorNrInvoice: MyString
+  CustomerStreetInvoice: MyString
+  CustomerStreetNoInvoice: MyString
+  CustomerEmailInvoice: MyString
+  CustomerZIPInvoice: MyString
+  CustomerCityInvoice: MyString
+  CustomerContactPersonInvoice: MyString
+  CustomerPhoneInvoice: MyString
+  CustomerRemarkInvoice: MyString
+  TypeOfWork: MyString
+  WorkDescription: MyString
+  WorkInstruction: MyString
+  PaymentMethod: MyString
+  CreationDate: MyString
+  EmployeeNr: MyString
+  Signature: MyString
+  SignatureUrl: MyString
+  PdfUrl: MyString
+  WordUrl: MyString
+  WorksheetCode: MyString
+  Status: MyString
+  WorkFinished: MyString
+  Archived: MyString
+  Photos: MyString
+  Workperiods: MyString
+  Materials: MyString
+  Documents: MyString
+  Forms: MyString
+  Employees: MyString
+  WorkObjects: MyString

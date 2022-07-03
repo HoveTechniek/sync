@@ -1,0 +1,262 @@
+<%= form_with(model: workorder) do |form| %>
+  <% if workorder.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(workorder.errors.count, "error") %> prohibited this workorder from being saved:</h2>
+
+      <ul>
+        <% workorder.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :external_id, style: "display: block" %>
+    <%= form.text_field :external_id %>
+  </div>
+
+  <div>
+    <%= form.label :WorkorderNo, style: "display: block" %>
+    <%= form.text_field :WorkorderNo %>
+  </div>
+
+  <div>
+    <%= form.label :OrderNr, style: "display: block" %>
+    <%= form.text_field :OrderNr %>
+  </div>
+
+  <div>
+    <%= form.label :WorkDate, style: "display: block" %>
+    <%= form.date_field :WorkDate %>
+  </div>
+
+  <div>
+    <%= form.label :WorkTime, style: "display: block" %>
+    <%= form.time_field :WorkTime %>
+  </div>
+
+  <div>
+    <%= form.label :WorkEndDate, style: "display: block" %>
+    <%= form.date_field :WorkEndDate %>
+  </div>
+
+  <div>
+    <%= form.label :WorkEndTime, style: "display: block" %>
+    <%= form.time_field :WorkEndTime %>
+  </div>
+
+  <div>
+    <%= form.label :ProjectNr, style: "display: block" %>
+    <%= form.text_field :ProjectNr %>
+  </div>
+
+  <div>
+    <%= form.label :ExternProjectNr, style: "display: block" %>
+    <%= form.text_field :ExternProjectNr %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerName, style: "display: block" %>
+    <%= form.text_field :CustomerName %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerDebtorNr, style: "display: block" %>
+    <%= form.text_field :CustomerDebtorNr %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerStreet, style: "display: block" %>
+    <%= form.text_field :CustomerStreet %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerEmail, style: "display: block" %>
+    <%= form.text_field :CustomerEmail %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerZIP, style: "display: block" %>
+    <%= form.text_field :CustomerZIP %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerCity, style: "display: block" %>
+    <%= form.text_field :CustomerCity %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerContactPerson, style: "display: block" %>
+    <%= form.text_field :CustomerContactPerson %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerPhone, style: "display: block" %>
+    <%= form.text_field :CustomerPhone %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerRemark, style: "display: block" %>
+    <%= form.text_field :CustomerRemark %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerNameInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerNameInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerDebtorNrInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerDebtorNrInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerStreetInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerStreetInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerStreetNoInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerStreetNoInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerEmailInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerEmailInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerZIPInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerZIPInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerCityInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerCityInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerContactPersonInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerContactPersonInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerPhoneInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerPhoneInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :CustomerRemarkInvoice, style: "display: block" %>
+    <%= form.text_field :CustomerRemarkInvoice %>
+  </div>
+
+  <div>
+    <%= form.label :TypeOfWork, style: "display: block" %>
+    <%= form.text_field :TypeOfWork %>
+  </div>
+
+  <div>
+    <%= form.label :WorkDescription, style: "display: block" %>
+    <%= form.text_field :WorkDescription %>
+  </div>
+
+  <div>
+    <%= form.label :WorkInstruction, style: "display: block" %>
+    <%= form.text_field :WorkInstruction %>
+  </div>
+
+  <div>
+    <%= form.label :PaymentMethod, style: "display: block" %>
+    <%= form.text_field :PaymentMethod %>
+  </div>
+
+  <div>
+    <%= form.label :CreationDate, style: "display: block" %>
+    <%= form.text_field :CreationDate %>
+  </div>
+
+  <div>
+    <%= form.label :EmployeeNr, style: "display: block" %>
+    <%= form.text_field :EmployeeNr %>
+  </div>
+
+  <div>
+    <%= form.label :Signature, style: "display: block" %>
+    <%= form.text_field :Signature %>
+  </div>
+
+  <div>
+    <%= form.label :SignatureUrl, style: "display: block" %>
+    <%= form.text_field :SignatureUrl %>
+  </div>
+
+  <div>
+    <%= form.label :PdfUrl, style: "display: block" %>
+    <%= form.text_field :PdfUrl %>
+  </div>
+
+  <div>
+    <%= form.label :WordUrl, style: "display: block" %>
+    <%= form.text_field :WordUrl %>
+  </div>
+
+  <div>
+    <%= form.label :WorksheetCode, style: "display: block" %>
+    <%= form.text_field :WorksheetCode %>
+  </div>
+
+  <div>
+    <%= form.label :Status, style: "display: block" %>
+    <%= form.text_field :Status %>
+  </div>
+
+  <div>
+    <%= form.label :WorkFinished, style: "display: block" %>
+    <%= form.text_field :WorkFinished %>
+  </div>
+
+  <div>
+    <%= form.label :Archived, style: "display: block" %>
+    <%= form.text_field :Archived %>
+  </div>
+
+  <div>
+    <%= form.label :Photos, style: "display: block" %>
+    <%= form.text_field :Photos %>
+  </div>
+
+  <div>
+    <%= form.label :Workperiods, style: "display: block" %>
+    <%= form.text_field :Workperiods %>
+  </div>
+
+  <div>
+    <%= form.label :Materials, style: "display: block" %>
+    <%= form.text_field :Materials %>
+  </div>
+
+  <div>
+    <%= form.label :Documents, style: "display: block" %>
+    <%= form.text_field :Documents %>
+  </div>
+
+  <div>
+    <%= form.label :Forms, style: "display: block" %>
+    <%= form.text_field :Forms %>
+  </div>
+
+  <div>
+    <%= form.label :Employees, style: "display: block" %>
+    <%= form.text_field :Employees %>
+  </div>
+
+  <div>
+    <%= form.label :WorkObjects, style: "display: block" %>
+    <%= form.text_field :WorkObjects %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

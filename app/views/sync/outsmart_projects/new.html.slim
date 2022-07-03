@@ -1,0 +1,22 @@
+= render "remote_modal", title: "Project aanmaken" do
+  = simple_form_for(@outsmart_project, url: sync.outsmart_projects_path, method: :post) do |f|
+    = f.error_notification
+    = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+    .form-inputs
+      = f.input :code
+      = f.input :code_ext
+      = f.input :debtor_number
+      = f.input :adr_code
+      = f.input :cpn_code
+      = f.input :debtor_number_invoice
+      = f.input :status
+      = f.input :name
+      = f.input :description
+      = f.input :progress
+      = f.input :date_start, html5: true, as: :date
+      = f.input :date_end, html5: true, as: :date
+      = f.input :active
+
+    .form-actions
+      = f.button :submit

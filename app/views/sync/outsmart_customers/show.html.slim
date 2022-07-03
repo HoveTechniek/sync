@@ -1,0 +1,27 @@
+= simple_form_for(@customer.customer, url: synchronise_outsmart_customer_path(@customer.id)) do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+  table.table
+    thead
+      th Attribute
+      th Dashboard
+      th Outsmart
+      th Nieuw
+    tbody
+      - Sync::Customer.synced_attributes.each do |attribute, owa_attribute|
+        - if @customer.customer.send(attribute) == @customer.outsmart_customer.send(owa_attribute)
+          tr.table-success
+            th = attribute
+            td = @customer.customer.send(attribute)
+            td = @customer.outsmart_customer.send(owa_attribute)
+            td = f.input attribute.to_sym, label: false
+        - else
+          tr.table-secondary
+            th = attribute
+            td = @customer.customer.send(attribute)
+            td = @customer.outsmart_customer.send(owa_attribute)
+            td = f.input attribute.to_sym, label: false
+
+  .form-actions
+    = f.button :submit

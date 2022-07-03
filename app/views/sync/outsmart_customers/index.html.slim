@@ -1,0 +1,13 @@
+table.table
+  thead
+    th.col-9 Naam
+    th.col-1 Gekoppeld?
+    th.col-1 Gelijk?
+    th.col-1
+  tbody
+    - @customers.each do |customer|
+      tr
+        td = link_to customer.name, sync.outsmart_customer_path(customer.id)
+        td = fancy_boolean customer.linked?
+        td = fancy_boolean customer.synced?
+        td = link_to "bewerken", sync.edit_outsmart_customer_path(customer.id), data: {turbo_frame: "remote_modal"}
